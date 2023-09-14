@@ -1,0 +1,15 @@
+{
+  "typescriptReactArrowFunctionComponent": {
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Arrow Function Component "
+  }
+}

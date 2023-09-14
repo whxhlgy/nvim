@@ -1,0 +1,37 @@
+{
+	"name": "example-snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"all"
+				],
+				"path": "./snippets/all.json"
+			},
+			{
+				"language": [
+					"python"
+				],
+				"path": "./snippets/python.json"
+			},
+			{
+				"language": [
+					"html"
+				],
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": [
+					"javascript"
+				],
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": [
+					"css"
+				],
+				"path": "./snippets/css.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "defaultStylingChange": {
+    "prefix": "dsc",
+    "body": [
+      "* {",
+      "\tmargin: 0;",
+      "\tpadding: 0;",
+      "\tbox-sizing: border-box;",
+      "}"
+    ]
+  }
+}
