@@ -123,8 +123,6 @@ return require("packer").startup(function(use)
   use { 'saadparwaiz1/cmp_luasnip' }
 
 	use("ray-x/lsp_signature.nvim")
-	-- copilot
-	use("github/copilot.vim")
 	-- formatter
 	use("mhartington/formatter.nvim")
 	-- dashboard
@@ -146,11 +144,13 @@ return require("packer").startup(function(use)
   -- git related
   -- notes: use 'C-w o' to quit git diff
   use("lewis6991/gitsigns.nvim")
-  use({
-    "jose-elias-alvarez/null-ls.nvim",
-    requires = { "nvim-lua/plenary.nvim" },
-  })
   if packer_bootstrap then
     require('packer').sync()
   end
+
+  --- #############
+  --- ### Other ###
+  --- #############
+
+
 end)
