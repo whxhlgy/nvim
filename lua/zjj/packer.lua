@@ -142,6 +142,7 @@ return require("packer").startup(function(use)
   -- git related
   -- notes: use 'C-w o' to quit git diff
   use("lewis6991/gitsigns.nvim")
+
   if packer_bootstrap then
     require('packer').sync()
   end
