@@ -73,10 +73,16 @@ vim.list_extend(bundles, vim.split(vim.fn.glob(home .. "/vscode-java-test/server
 config["init_options"] = {
 	bundles = bundles,
 }
-vim.keymap.set("n", "<leader>df", function()
+
+local keymap = vim.keymap
+
+keymap.set("n", "<leader>df", function()
 	require("jdtls").test_class()
 end, { desc = "Test class" })
-vim.keymap.set("n", "<leader>dm", function()
+keymap.set("n", "<leader>dm", function()
 	require("jdtls").test_nearest_method()
 end, { desc = "Test nearest method" })
 require("jdtls").start_or_attach(config)
+keymap.set("n", "<M-v>", function()
+	require("jdtls").extract_variable()
+end, { desc = "Extract variable" })
